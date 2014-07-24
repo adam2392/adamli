@@ -99,8 +99,9 @@
             $('#searchboxText').bind('input',function(){
               searchProjects();
             });
-    			});
+    	});
 
-        });
+    });
+
 
 		
