@@ -12,13 +12,24 @@ td {
 	text-decoration: underline;
 	font-weight: bold;
 }
-.tablecontent {
+
+#cover {
+	margin-top: -20px;
+	background: url(pictures/verydark.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#cover img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #header {
 	background-color: maroon;
 	margin-top: -20px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 .project {
@@ -26,16 +37,17 @@ td {
 	margin-left: 70px;
 }
 
-.thoughts, .work {
-	background-color: turquoise;
-	margin-top: -20px;
+.thoughts, .work, #about {
+	background-color: teal;
+	margin-top: -21px;
 	padding-bottom: 20px;	
 }
 
-#about{
-	background-color: turquoise;
-	margin-top: -20px;
-	padding-bottom: 20px;	
+#about > p, .work > p, .thoughts > p {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 0% 2% 0% 2%;
 }
 
 img {
@@ -43,7 +55,7 @@ img {
 }
 
 h1 {
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 h1, h2 {
@@ -88,4 +100,39 @@ ul {
 
 .footer-icons img {
 	margin-left: 2%;
+}
+
+/** small devices (tablets, >= 768px) */
+@media (min-width: 768px) {
+  .figdesc {
+      margin-left: 20px;
+  }
+  #about #photo-wrapper figure {
+    margin-left: 30px;
+  }
+  #photo-wrapper figure {
+    margin-left: 30px;
+  }
+  #photo-wrapper .row {
+    margin-right: 30px;
+  }
+  #photo-wrapper img {
+    height: 230px;
+    width: 230px; 
+  }
+  #adventures .figdesc {
+    clear:both;
+  }
+}
+
+/** medium devices (desktops, >= 992px) */
+@media (min-width: 992px) {
+}
+
+/** large devices (large desktops, >= 1200px) */
+@media (min-width: 1200px) {
+  #adventures .row {
+    width: 60%;
+    margin-left: 18%;
+  }
 }
