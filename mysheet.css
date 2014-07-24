@@ -1,0 +1,91 @@
+body {
+	font-size: 16px;
+	font-family: cambria;
+}
+
+td {
+	text-align: center;
+	border-style: solid;
+	color: black;
+}
+#tableheader {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.tablecontent {
+}
+
+#header {
+	background-color: maroon;
+	margin-top: -20px;
+	padding-bottom: 20px;
+}
+
+.project {
+	border-style: solid;
+	margin-left: 70px;
+}
+
+.thoughts, .work {
+	background-color: turquoise;
+	margin-top: -20px;
+	padding-bottom: 20px;	
+}
+
+#about{
+	background-color: turquoise;
+	margin-top: -20px;
+	padding-bottom: 20px;	
+}
+
+img {
+	margin-top: 20px;
+}
+
+h1 {
+	padding-top: 20px;
+}
+
+h1, h2 {
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+
+a {
+	color: black;
+	text-decoration:none;
+}
+a:hover {
+	color: blue;
+	font-style: italic;
+	text-decoration:none;
+}
+ul {
+	list-style-type: none;
+}
+
+.footer {
+	position: relative;
+	left: 0;
+	bottom: 0px;
+	height: auto;
+	width: 100%;
+	background-color: black;
+	float: right;
+}
+
+.footer-text {
+	color: white;
+	float: left;
+	margin: 55px 2% 4% 3%
+}
+
+.footer-icons {
+	width: 80%;
+	margin: 30px
+}
+
+.footer-icons img {
+	margin-left: 2%;
+}
