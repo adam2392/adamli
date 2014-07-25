@@ -47,90 +47,103 @@
 		</nav>
 		
 		<!-- Portfolio Work Split Section -->
-		<div class="work">
+		<div id="workheader">
 			<h1>My Work</h1>
 			<p> Hello! Welcome to my portfolio page. This is where I will showcase my engineering, software
 				and business projects that I have worked on. 
+			
+				<table align="center">
+					<!-- Table Header -->
+					<div>
+						<tr id="tableheader">
+							<td>Bioengineering</td>
+							<td>Software/Coding</td>
+							<td>Business</td>
+						</tr>
+					</div>
+					
+					<!-- Projects Section -->
+					<div>
+						<tr>
+							<td><a href="https://ucsdewh.weebly.com/Engineering">Engineering World Health</a></td>
+							<td>Personal Website</td>
+							<td><a href="#audubon">Audubon Business Pitch</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://gaitanalysisofparkinsons.weebly.com/">Gait Analysis of Parkinson's Disease</a></font></td>
+							<td>Data Acquisition Using Microsoft Kinect C++</td>
+							<td><a href="#nciia">NCIIA E-Team Business Plan</a></td>
+						</tr>
+						<tr>
+							<td><a href="#calit2">Image Analysis Method For Biomechanics</a></td>
+							<td>Data Acquisition Using Microsoft Kinect C#</td>
+							<td><a href="#nsficorps">Von Liebig NSF I-Corps Business Pitch</a></td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td>Random Structured Tree For CSE 100</td>
+							<td> </td>
+						</tr>
+					</div>
+				</table>
 			</p>
-			<table align="center">
-				<!-- Table Header -->
-				<div>
-					<tr id="tableheader">
-						<td>Bioengineering</td>
-						<td>Software/Coding</td>
-						<td>Business</td>
-					</tr>
-				</div>
-				<p class="tablecontent">
-				<!-- Projects Section -->
-				<div>
-					<tr>
-						<td><a href="https://ucsdewh.weebly.com/Engineering">Engineering World Health</a></td>
-						<td>Personal Website</td>
-						<td><a href="#audubon">Audubon Business Pitch</a></td>
-					</tr>
-					<tr>
-						<td><a href="https://gaitanalysisofparkinsons.weebly.com/">Gait Analysis of Parkinson's Disease</a></font></td>
-						<td>Data Acquisition Using Microsoft Kinect C++</td>
-						<td><a href="#nciia">NCIIA E-Team Business Plan</a></td>
-					</tr>
-					<tr>
-						<td><a href="#calit2">Image Analysis Method For Biomechanics</a></td>
-						<td>Data Acquisition Using Microsoft Kinect C#</td>
-						<td><a href="#nsficorps">Von Liebig NSF I-Corps Business Pitch</a></td>
-					</tr>
-					<tr>
-						<td> </td>
-						<td>Random Structured Tree For CSE 100</td>
-						<td> </td>
-					</tr>
-				</div>
-				</p>
-			</table>
-		</div>
+		</div> <!-- end of header -->
 		
 		<!-- Actual Work's Section -->	
-		
-		<!-- Calit2 Project Section -->
-		<div class="work" id="calit2">
-			<h1>Qualcomm Institute Summer 2012 Research</h1>
-			<p> This is a poster I made for my summer research through the Qualcomm Institute and the Cartilage
-				Tissue Engineering Laboratory. I was interested in the biomechanics of cartilage tissue defects, and
-				developing methodologies to study their deformational dynamics. Here is a link to the 
-				<a href="http://ucsdstudents.calit2.net/sl-2012.php">Qualcomm Institute</a>.</p>
-				
-				<object class="project" data="Projects/Calit2Poster.pdf" height="400" width="700"></object>
-		</div>
-		
-		<!-- Audubon Project Section -->
-		<div class="work" id="audubon">
-			<h1>Yale SOM Audubon Business Pitch</h1>
-			<p> This is the business pitch that I worked on with 4 other students during the 
-				Yale School of Management's Global Pre-MBA program in the summer of 2014. 
-				We won 3rd place in the judge's award and 2nd place for People's choice award.</p>
-				
-				<object class="project" data="Projects/AudobonProject_RunIT_GreenHaven.pdf" height="400" width="700"></object>
-		</div>
-		
-		<!-- NCIIA Project Section -->
-		<div class="work" id="nciia">
-			<h1>NCIIA E-Team Business Plan</h1>
-			<p> This is the business plan that I led 2 other students to obtain
-				funding of up to $75,000 as an early stage startup venture. This program has an
-				acceptance rate of ~15%. </p>
-				
-				<object class="project" data="Projects/BiometricsAnalytics_UCSD_ETProposal.pdf" height="400" width="700"></object>
-		</div>
-
-		<!-- Von Liebig NSF I-Corps Project Section -->
-		<div class="work" id="nsficorps">
-			<h1>Von Liebig NSF I-Corps Business Pitch</h1>
-			<p> This is the business pitch that I spearheaded during the 
-				Von Liebig NSF I-Corps program during the year of 2014. We won seed funding and mentorship
-				training that helped our team win the NCIIA E-Team program.</p>
-				
-				<object class="project" data="Projects/VonLiebigPresentationSpring_FINAL.pdf" height="400" width="700"></object>
-		</div>		
+		<div id="work">
+			<!-- Calit2 Project Section -->
+			<div class="container-fluid" id="photo-wrapper">
+				<article id="calit2">
+					<h1>Qualcomm Institute Summer 2012 Research</h1>
+					<p> This is a poster I made for my summer research through the Qualcomm Institute and the Cartilage
+						Tissue Engineering Laboratory. I was interested in the biomechanics of cartilage tissue defects, and
+						developing methodologies to study their deformational dynamics. Here is a link to the 
+						<a href="http://ucsdstudents.calit2.net/sl-2012.php">Qualcomm Institute</a>.</p>
+						
+						<object class="project" data="Projects/Calit2Poster.pdf" height="400" width="700"></object>
+				</article>
+			</div>
+			<hr>
+			
+			<!-- Audubon Project Section -->
+			<div class="container-fluid" id="photo-wrapper">
+				<article id="audubon">
+					<h1>Yale SOM Audubon Business Pitch</h1>
+					<p> This is the business pitch that I worked on with 4 other students during the 
+						Yale School of Management's Global Pre-MBA program in the summer of 2014. 
+						We won 3rd place in the judge's award and 2nd place for People's choice award.</p>
+					
+					<object class="project" data="Projects/AudobonProject_RunIT_GreenHaven.pdf" height="400" width="700"></object>
+				</article>
+			</div>
+			<hr>
+			
+			<!-- NCIIA Project Section -->
+			<div class="container-fluid" id="photo-wrapper">
+				<article id="nciia">
+					<h1>NCIIA E-Team Business Plan</h1>
+					<p> This is the business plan that I led 2 other students to obtain
+						funding of up to $75,000 as an early stage startup venture. This program has an
+						acceptance rate of ~15%. </p>
+						
+						<object class="project" data="Projects/BiometricsAnalytics_UCSD_ETProposal.pdf" height="400" width="700"></object>
+				</article>
+			</div>
+			<hr>
+			
+			<!-- Von Liebig NSF I-Corps Project Section -->
+			<div class="container-fluid" id="photo-wrapper">
+				<article id="nsficorps">
+					<h1>Von Liebig NSF I-Corps Business Pitch</h1>
+					<p> This is the business pitch that I spearheaded during the 
+						Von Liebig NSF I-Corps program during the year of 2014. We won seed funding and mentorship
+						training that helped our team win the NCIIA E-Team program.</p>
+					
+					<object class="project" data="Projects/VonLiebigPresentationSpring_FINAL.pdf" height="400" width="700"></object>
+				</article>
+			</div>	
+			
+		</div> <!-- end of works section -->
 		
 		<!-- Links to LinkedIn, Email, Facebook, Twitter, Etc. -->
 		<div class="footer">	

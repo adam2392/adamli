@@ -3,16 +3,49 @@ body {
 	font-family: cambria;
 }
 
-td {
-	text-align: center;
-	border-style: solid;
-	color: black;
+hr {
+	color: white;
 }
+
+h1 {
+	padding-top: 10px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+
+a {
+	color: #efefef;
+	text-decoration:none;
+}
+a:hover {
+	color: blue;
+	font-style: italic;
+	text-decoration:none;
+}
+
+/* Portfolio Section */
 #tableheader {
 	text-decoration: underline;
 	font-weight: bold;
 }
 
+td {
+	text-align: center;
+	border-style: solid;
+	color: black;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.project {
+	border-style: solid;
+	margin-left: 70px;
+}
+
+/* Home Section */
 #cover {
 	margin-top: -20px;
 	background: url(pictures/verydark.png);
@@ -26,57 +59,33 @@ td {
     margin-right: auto;
 }
 
-#header {
+/* Headers for each page */
+#about, #workheader, #thoughtsheader{
+	background-color: teal;
+	margin-top: -20px;
+	padding-bottom: 20px;
+}
+
+#workheader h1, #thoughtsheader h1 {
+	color: black;
+}
+
+/* Content for each page */
+#posts, #work{
+	color: black;
 	background-color: maroon;
 	margin-top: -20px;
-	padding-bottom: 10px;
-}
-
-.project {
-	border-style: solid;
-	margin-left: 70px;
-}
-
-.thoughts, .work, #about {
-	background-color: teal;
-	margin-top: -21px;
 	padding-bottom: 20px;	
 }
 
-#about > p, .work > p, .thoughts > p {
-  text-align: center;
-  width: 100%;
-  height: auto;
-  padding: 0% 2% 0% 2%;
-}
-
-img {
-	margin-top: 20px;
-}
-
-h1 {
-	padding-top: 10px;
-}
-
-h1, h2 {
+#about p, #posts p, #work p{
 	text-align: center;
-	color: black;
-	font-weight: bold;
+	width: 100%;
+	height: auto;
+	padding: 0% 2% 0% 2%;
 }
 
-a {
-	color: black;
-	text-decoration:none;
-}
-a:hover {
-	color: blue;
-	font-style: italic;
-	text-decoration:none;
-}
-ul {
-	list-style-type: none;
-}
-
+/* Footer area for Social Media Connections */
 .footer {
 	position: relative;
 	left: 0;
@@ -90,7 +99,7 @@ ul {
 .footer-text {
 	color: white;
 	float: left;
-	margin: 55px 2% 4% 3%
+	margin: 35px 2% 4% 3%
 }
 
 .footer-icons {
