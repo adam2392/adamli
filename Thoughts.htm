@@ -1,8 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>Adam Li's Thoughts</title>
-		<link rel="stylesheet" type="text/css" href="mysheet.css" />
+		<title>Adam Li</title>
+  
+		<!-- My style CSS -->
+		<link rel="stylesheet" type="text/css" href="mysheet.css" />	
+
+		<!-- Bootstrap core CSS -->		
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
 		
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    	<link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic' rel='stylesheet' type='text/css'>
+		
+		<!-- Meta Data Section -->
 		<meta name="description" content="Adam Li's website to show his Curriculum Vitae (CV), blog, and portfolio of work">
 		<meta name="keywords" content="HTML, CSS, JavaScript, Adam Li, UCSD, blog, engineering work, bioengineering, software, entrepreneur">
 		<meta name="author" content="Adam Li">
@@ -11,29 +21,30 @@
 	</head>
 
 	<body>
-			<!-- Header and Menu Area -->
-		<div id="header">
-			<!-- Icon for Nav Menu -->
-			<span style="cursor:pointer">
-				<a href="Portfolio.htm"><img src="Pictures/gridicon.png" alt="Portfolio" title="Portfolio"/></a>
-			</span>
-
-			<!-- Icon for Home Page -->
-			<span style="cursor:pointer">
-				<a href="Home.htm"><img src="Pictures/homeicon.png" alt="Home" title="Home"/></a>
-			</span>
-			
-			<!-- icon for resume -->
-      			<a href="Projects/AdamLi_CV.pdf"><img src="Pictures/resumeicon.png" alt="Portfolio" title="Resume"/></a>
-
-
-			<!-- icon for blog -->
-			<span style="cursor:pointer">
-				<a href="Thoughts.htm"><img src="Pictures/blogicon.png" alt="Blog" title="Blog" height="100px" width="100px"/></a>
-			</span>
-			
-			<h1 style="font-size:45px;">Adam Li's Website</h1>
-		</div>
+		<nav class="navbar navbar-inverse">
+			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			  <div class="container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="index.html">Adam Li</a>
+				</div>
+				
+				<!-- Menu Items -->
+				<div class="collapse navbar-collapse">
+				  <ul class="nav navbar-nav">
+					<li class="active"><a href="Projects/AdamLi_CV.pdf">CV/Resume</a></li>
+					<li><a href="Portfolio.htm">Portfolio</a></li>
+					<li><a href="Thoughts.htm">Thoughts</a></li>
+				  </ul>
+				</div><!--/.nav-collapse -->
+			  </div>
+			</div>
+		</nav>
 	
 		<!-- Blog Section -->
 		<div class="thoughts">
