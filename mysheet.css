@@ -10,12 +10,13 @@ hr {
 h1 {
 	padding-top: 10px;
 	text-align: center;
-	color: black;
+	color: #efefef;
 	font-weight: bold;
 }
 
-a {
-	color: #efefef;
+a{
+	color: blue;
+	font-weight: 900;
 	text-decoration:none;
 }
 a:hover {
@@ -25,19 +26,20 @@ a:hover {
 }
 
 /* Portfolio Section */
-#tableheader {
-	text-decoration: underline;
-	font-weight: bold;
-}
-
 td {
+	color: black;
 	text-align: center;
 	border-style: solid;
-	color: black;
 }
 
 ul {
 	list-style-type: none;
+}
+
+#tableheader {]
+	color: black;
+	text-decoration: underline;
+	font-weight: bold;
 }
 
 .project {
@@ -67,18 +69,19 @@ ul {
 }
 
 #workheader h1, #thoughtsheader h1 {
-	color: black;
+	color: #efefef;
 }
 
 /* Content for each page */
 #posts, #work{
 	color: black;
-	background-color: maroon;
+	background: url(pictures/maroon.png);
 	margin-top: -20px;
 	padding-bottom: 20px;	
 }
 
-#about p, #posts p, #work p{
+#about p, #posts p, #work p, #workheader p{
+	color: #efefef;
 	text-align: center;
 	width: 100%;
 	height: auto;
