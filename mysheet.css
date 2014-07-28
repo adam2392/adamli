@@ -75,7 +75,7 @@ ul {
 /* Content for each page */
 #posts, #work{
 	color: black;
-	background: url(pictures/maroon.png);
+	background-color: maroon;
 	margin-top: -20px;
 	padding-bottom: 20px;	
 }
