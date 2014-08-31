@@ -1,9 +1,7 @@
 <html lang="en">
 	<head>
 		<title>Adam Li</title>
-		
-		<!-- Drop down menu CSS -->
-		<link rel="stylesheet" type="text/css" href="dropdown.css" />	
+<link rel="stylesheet" type="text/css" href="test.css" />	
 		
 		<!-- Bootstrap core CSS -->		
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
@@ -36,47 +34,50 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
+				  <a class="navbar-brand" href="index.html">Adam Li</a>
 				</div>
+				
+				<!-- Start of the nav bar content -->
+				  <div class="nav-collapse"><!-- Other nav bar content -->
+					<!-- The drop down menu -->
+					<ul class="nav pull-right">
+					  <li><a href="/users/sign_up">Sign Up</a></li>
+					  <li class="divider-vertical"></li>
+					  <li class="dropdown">
+						<a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+						</div>
+					  </li>
+					</ul>
+				  </div>
+				
 
 				<!-- Menu Items -->
 				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li class="dropdown">
-							<a class="dropdown-toggle" href="index.html" data-toggle="dropdown" id="indexHeader">Adam Li</a>
-							<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-								<ul>
-								<li><a href="mailto:adam2392@gmail.com" title="Adam2392@gmail.com">- Contact Me At: Adam2392@gmail.com</a></li>
-								</ul>
-							</div>
-						</li>
+							<ul class="nav navbar-nav">
+								<dl class="dropdown">
+									<dt id="one-ddheader" onmouseover="ddMenu('one', 1)" onmouseout="ddMenu('one',-1)">CV & Resume</dt>
 						
-						<li class="dropdown">
-							<a class="dropdown-toggle" href="#" data-toggle="dropdown">CV & Resume</a>
-							<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-								<ul>
-								<li><a href="Projects/AdamLi_CV.pdf">- Curriculum Vitae</a></li>
-								<li><a href="Projects/AdamLi_CV.pdf">- Resume</a></li>
-								</ul>
-							</div>
-						</li>
+									<!-- Cancels the hide by passing in the element 'one'+'-ddheader' -->
+									<dd id="one-ddcontent" onmouseover="cancelHide('one')" onmouseout="ddMenu('one', -1)"> 
+										<ul>
+										<li><a href="Projects/AdamLi_CV.pdf">Curriculum Vitae</a></li>
+										<li><a href="Projects/AdamLi_CV.pdf">Resume</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</ul>
 						
-						<li class="dropdown">
-							<a class="dropdown-toggle" href="Portfolio.htm">Portfolio Home</a>
-							<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-								<ul>
-									<li><a href="Projects/Calit2Poster.pdf">- Qualcomm Institute Research</a><li>
-									<li><a href="Projects/AudubonProject_RunIT_GreenHaven_Final.pdf">- Audubon Business Pitch</a></li>
-									<li><a href="Projects/VonLiebigPresentationSpring_FINAL.pdf">- Von Liebig Startup Pitch</a></li>
-								</ul>
-							</div>
-						</li>
-						
-						<li class="dropdown">
-							<a class="dropdown-toggle" href="Thoughts.htm">Thoughts</a>
-							<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-							</div>
-						</li>
-					</ul>
+					<li>
+						<a href="Portfolio.htm">Portfolio Home</a>
+						<ul id="menu2" onmouseover="keepsubmenu()" onmouseout="closeelement()"></ul>
+							<li><a href="Projects/Calit2Poster.pdf">Qualcomm Institute Research</a><li>
+							<li><a href="Projects/Audubon Project_RunIT_GreenHaven_Final.ppt">Audubon Business Pitch</a></li>
+							<li><a href="Projects/VonLiebigPresentationSpring_FINAL.pdf">Von Liebig Entrepreneurship Pitch</a></li>
+						</ul>
+					</li>
+					<li><a href="Thoughts.htm">Thoughts</a></li>
+				  </ul>
 				</div><!--/.nav-collapse -->
 			  </div>
 			</div>

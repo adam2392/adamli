@@ -2,6 +2,8 @@
 <html lang="en">
 	<head>
 		<title>Adam Li</title>
+		<!-- Drop down menu CSS -->
+		<link rel="stylesheet" type="text/css" href="dropdown.css" />
   
 		<!-- Bootstrap core CSS -->		
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
@@ -30,17 +32,48 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-				  </button>
-				  <a class="navbar-brand" href="index.html">Adam Li</a>
+				    </button>
 				</div>
-				
+
 				<!-- Menu Items -->
 				<div class="collapse navbar-collapse">
-				  <ul class="nav navbar-nav">
-					<li class="active"><a href="Projects/AdamLi_CV.pdf">CV/Resume</a></li>
-					<li><a href="Portfolio.htm">Portfolio</a></li>
-					<li><a href="Thoughts.htm">Thoughts</a></li>
-				  </ul>
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="index.html" data-toggle="dropdown" id="indexHeader">Adam Li</a>
+							<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+								<ul>
+								<li><a href="mailto:adam2392@gmail.com" title="Adam2392@gmail.com">- Contact Me At: Adam2392@gmail.com</a></li>
+								</ul>
+							</div>
+						</li>
+						
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown">CV & Resume</a>
+							<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+								<ul>
+								<li><a href="Projects/AdamLi_CV.pdf">- Curriculum Vitae</a></li>
+								<li><a href="Projects/AdamLi_CV.pdf">- Resume</a></li>
+								</ul>
+							</div>
+						</li>
+						
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="Portfolio.htm">Portfolio Home</a>
+							<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+								<ul>
+									<li><a href="Projects/Calit2Poster.pdf">- Qualcomm Institute Research</a><li>
+									<li><a href="Projects/Audubon Project_RunIT_GreenHaven_Final.ppt">- Audubon Business Pitch</a></li>
+									<li><a href="Projects/VonLiebigPresentationSpring_FINAL.pdf">- Von Liebig Startup Pitch</a></li>
+								</ul>
+							</div>
+						</li>
+						
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="Thoughts.htm">Thoughts</a>
+							<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+							</div>
+						</li>
+					</ul>
 				</div><!--/.nav-collapse -->
 			  </div>
 			</div>
