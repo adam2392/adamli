@@ -11,6 +11,9 @@
 		<!-- My style CSS -->
 		<link rel="stylesheet" type="text/css" href="mysheet.css" />
 		
+		<!-- JavaScript File -->
+		<script type="text/javascript" src="myjs.js"></script>
+		
 		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
     	<link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic' rel='stylesheet' type='text/css'>
 		
@@ -85,40 +88,51 @@
 			<p> Hello! Welcome to my portfolio page. This is where I will showcase my engineering, software
 				and business projects that I have worked on. 
 			
-				<table align="center">
-					<!-- Table Header -->
-					<div>
-						<tr id="tableheader">
-							<td>Bioengineering</td>
-							<td>Software/Coding</td>
-							<td>Business</td>
-						</tr>
-					</div>
-					
-					<!-- Projects Section -->
-					<div>
-						<tr>
-							<td><a href="https://ucsdewh.weebly.com/Engineering">Engineering World Health</a></td>
-							<td>Personal Website</td>
-							<td><a href="#audubon">Audubon Business Pitch</a></td>
-						</tr>
-						<tr>
-							<td><a href="https://gaitanalysisofparkinsons.weebly.com/">Gait Analysis of Parkinson's Disease</a></font></td>
-							<td>Data Acquisition Using Microsoft Kinect C++</td>
-							<td><a href="#nciia">NCIIA E-Team Business Plan</a></td>
-						</tr>
-						<tr>
-							<td><a href="#calit2">Image Analysis Method For Biomechanics</a></td>
-							<td>Data Acquisition Using Microsoft Kinect C#</td>
-							<td><a href="#nsficorps">Von Liebig NSF I-Corps Business Pitch</a></td>
-						</tr>
-						<tr>
-							<td> </td>
-							<td>Random Structured Tree For CSE 100</td>
-							<td> </td>
-						</tr>
-					</div>
-				</table>
+			<table id="tableheader" align="center" id="tableheader">
+				<tr>
+					<td>
+					<dl class="dropdown">
+					  <dt id="one-ddheader" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)">Programming Languages</dt>
+					  <dd id="one-ddcontent" onmouseover="cancelHide('one')" onmouseout="ddMenu('one',-1)">
+						<ul>
+						  <li><a href="#" class="separator">C#</a></li>
+						  <li><a href="#" class="separator">C/C++</a></li>
+						  <li><a href="#" class="separator">Matlab</a></li>
+						  <li><a href="#" class="separator">Java</a></li>
+						  <li><a href="#">JavaSript</a></li>
+						</ul>
+					  </dd>
+					</dl>
+					</td>
+				<td>
+				<dl class="dropdown">
+				  <dt id="two-ddheader" onmouseover="ddMenu('two',1)" onmouseout="ddMenu('two',-1)">Bioengineering</dt>
+				  <dd id="two-ddcontent" onmouseover="cancelHide('two')" onmouseout="ddMenu('two',-1)">
+					<ul>
+					  <li><a href="https://ucsdewh.weebly.com/Engineering" class="separator">Engineering World Health</a></li>
+					  <li><a href="https://gaitanalysisofparkinsons.weebly.com/" class="separator">Gait Analysis of Parkinson's Disease</a></li>
+					  <li><a href="#calit2" class="separator">Image Analysis for Mechanics</a></li>
+					  <li><a href="Projects/BENG186A_FINAL_GRP14.pdf" class="separator">Brain Computer Interface Research Proposal</a></li>
+					  <li><a href="Projects/be_125_project.pdf">Analysis of Hodgkin-Huxley Model</a></li>
+					</ul>
+				  </dd>
+				</dl>
+				</td>
+				<td>
+				<dl class="dropdown">
+				  <dt id="three-ddheader" onmouseover="ddMenu('three',1)" onmouseout="ddMenu('three',-1)">Business</dt>
+				  <dd id="three-ddcontent" onmouseover="cancelHide('three')" onmouseout="ddMenu('three',-1)">
+					<ul>
+					  <li><a href="#audubon" class="separator">Audubon Business Pitch @ Yale SOM</a></li>
+					  <li><a href="#nciia" class="separator">NCIIA E-Team Business Plan</a></li>
+					  <li><a href="#nsficorps">Von Liebig Entrepreneurship Pitch</a></li>
+					</ul>
+				  </dd>
+				</dl>	
+				</td>
+				</tr>
+			</table>
+							
 			</p>
 		</div> <!-- end of header -->
 		

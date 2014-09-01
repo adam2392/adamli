@@ -26,20 +26,34 @@ a:hover {
 }
 
 /* Portfolio Section */
-td {
+.dropdown ul {
+	text-align: center;
+	list-style-type: none;
+	font-weight: bold;
+}
+
+.dropdown dt, dl{
+	text-align: center;
+	width: 100%;
+	vertical-align: middle;
+}
+
+#tableheader td{
+	vertical-align: middle;	
 	color: black;
 	text-align: center;
-	border-style: solid;
 }
 
-ul {
-	list-style-type: none;
+#tableheader dt {
+	border: solid #efefef;
 }
 
-#tableheader {]
+#tableheader {
 	color: black;
-	text-decoration: underline;
 	font-weight: bold;
+	margin: auto;
+	table-layout: fixed;
+	width: 900px;
 }
 
 .project {
@@ -65,7 +79,7 @@ ul {
 #about, #workheader, #thoughtsheader{
 	background-color: teal;
 	margin-top: -20px;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 #workheader h1, #thoughtsheader h1 {
@@ -80,7 +94,7 @@ ul {
 	padding-bottom: 20px;	
 }
 
-#about p, #posts p, #work p, #workheader p{
+#about p, #posts p, #work p, #workheader p, #thoughtsheader p{
 	color: #efefef;
 	text-align: center;
 	width: 100%;

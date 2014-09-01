@@ -1,3 +1,15 @@
+body {margin:25px;font:12px Verdana, Arial, Helvetica}
+* {padding:0; margin:0}
+.dropdown {float:left; padding-right:2px}
+.dropdown dt {padding:8px; font-weight:bold; cursor:pointer; }
+.dropdown dt:hover {background:url(images/header_over.gif)}
+.dropdown dd {position:absolute; overflow:hidden; width:200px; display:none; background:#fff; z-index:200; opacity:0}
+.dropdown ul {width:204px; border:1px solid #9ac1c9; list-style:none; border-top:none}
+.dropdown li {display:inline}
+.dropdown a, .dropdown a:active, .dropdown a:visited {display:block; padding:5px; color:#333; text-decoration:none; width:194px}
+.dropdown a:hover {background:#d9e1e4; color:#000}
+.dropdown .separator {border-bottom:1px solid #b9d6dc}
+
 #indexHeader {
 	font-size: 150%
 }

@@ -1,9 +1,4 @@
-
 var today = new Date()
-//variables'
-declaration var timer = 0;
-var item = 0;
-
 var DDSPEED = 10;
 var DDTIMER = 15;
 
@@ -11,7 +6,6 @@ var DDTIMER = 15;
 function loadDate() {
 	alert(today);
 }
-
 
 
 //main function to handle mouse events
@@ -26,10 +20,12 @@ function ddMenu(id, d) {
 	clearInterval(c.timer);
 	
 	//if d = 1 open up the menu
-	if(d == 1) {
+	if(d == 1) 
+	{
 		clearTimeout(h.timer);
 		if(c.maxh && c.maxh <= c.offsetHeight) {return}
 		else if(!c.maxh) {
+			c.style.display = 'block';
 			c.style.height = 'auto';
 			c.maxh = c.offsetHeight;
 			c.style.height = '0px';
@@ -37,7 +33,8 @@ function ddMenu(id, d) {
 		c.timer = setInterval(function() {ddSlide(c, 1)}, DDTIMER);
 	}
 	//if d=1 collapse the menu
-	else {
+	else 
+	{
 		h.timer = setTimeout(function() {ddCollapse(c)}, 50);
 	}
 }
@@ -56,7 +53,7 @@ function cancelHide(id) {
 	clearTimeout(h.timer);
 	clearInterval(c.timer);
 	
-	if(c.offsetHeight < c.maxh){
+	if(c.offsetHeight < c.maxh)
 		c.timer = setInterval(function(){ddSlide(c,1)},DDTIMER);
 }
 
