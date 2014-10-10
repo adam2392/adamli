@@ -26,6 +26,10 @@ a:hover {
 }
 
 /* Portfolio Section */
+.auditCourses {
+	text-align: center;
+}
+
 .dropdown ul {
 	text-align: center;
 	list-style-type: none;
